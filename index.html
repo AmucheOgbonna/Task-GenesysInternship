@@ -16,24 +16,33 @@
         <h1 class="my-3">To Do List</h1>
     </header>
     <section>
-        <form class="form-control" id="form">
+        <!-- onsubmit="onSubmitForm()" -->
+        <!-- <form id="form" onsubmit="event.preventDefault(); onClicking();"> -->
+        <form id="form" autocomplete="off">
             <div class="mb-3">
                 <!-- <label>Task to Complete</label> -->
-                <input type="text" name="text" id="text" placeholder="Whats the task for today?">
+                <input type="text" name="text" id="text" placeholder="Whats the task for today?" class="form-controls">
                 <input type="submit" value="Add Here" class="btn btn-primary" id="submit">
-
-            </div>
-            <div id="list">
-                <div>
-                    <p>Finish My Javascript Assignment </p><br>
-                </div>
-                <div>
-                    <i>me</i>
-                    <i>me</i>
-                    <i>me</i>
-                </div>
-            </div>
         </form>
+        </div>
+        <div id="list">
+            <table class="table" id="Table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan=4>Task for the day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="data">
+                        <td scope="col" id="uploadTask"></td>
+                        <td scope="col" id="delete"><i class="bi bi-x-circle"></i></td>
+                        <td scope="col" id="check"><i class="bi bi-check-circle"></i></td>
+                        <td scope="col" id="edit"><i i class="bi bi-pencil-square"></i></td>
+                    </tr>
+                </tbody>
+
+        </div>
+        <!-- </form> -->
     </section>
 
 

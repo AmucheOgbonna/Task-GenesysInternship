@@ -14,3 +14,52 @@ body{
 form #list{
     display: inline-flex;
 }
+.bi {
+    color: #0a58ca;
+}
+.text{
+    border-color: #0d6efd;
+    display: inline!important;
+    width: 60% !important;
+}
+.form-controls{
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+table{
+    visibility: hidden;
+}
+
+tbody{
+    counter-reset: rowNumber;
+}
+
+tbody tr::before{
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber) ".";
+    padding-right: 0.3em;
+    text-align: right;
+    vertical-align: middle;
+}
+.bi{
+    padding-right: 10px;
+}
+#edit :hover{
+    color: pink;
+}
